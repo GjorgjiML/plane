@@ -13,8 +13,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc --noEmit && tsdown",
-    "dev": "tsdown --watch --onSuccess \"node --env-file=.env .\"",
-    "start": "node --env-file=.env .",
+    "dev": "tsdown --watch --onSuccess \"node --env-file-if-exists=.env .\"",
+    "start": "node --env-file-if-exists=.env .",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
